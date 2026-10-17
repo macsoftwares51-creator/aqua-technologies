@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aqua Solar Technologies Ltd provides solar, water, electrical and construction solutions across Kenya.">
+    <title>Aqua Solar Technologies Ltd | Water, Energy & Construction</title>
+    <link rel="stylesheet" href="style.css?v=9">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- PRE-LOADER ANIMATION -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="sun-panel-container">
+                <div class="anim-sun"><i class="fa-solid fa-sun"></i></div>
+                <div class="sun-rays"></div>
+                <div class="anim-panel"><i class="fa-solid fa-solar-panel"></i></div>
+            </div>
+            <div class="power-conduit">
+                <div class="pulse-beam"></div>
+            </div>
+            <div class="anim-bulb-container">
+                <i class="fa-solid fa-lightbulb anim-bulb" id="targetBulb"></i>
+                <div class="bulb-glow"></div>
+            </div>
+            <h1 class="anim-brand-reveal">AQUA SOLAR TECHNOLOGIES LTD</h1>
+            <p class="anim-motto">Green Energy for Clean Future</p>
+        </div>
+    </div>
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <div id="main-content" class="hidden-content">
+
+        <!-- TOP BAR -->
+        <div class="top-bar">
+            <div class="container top-bar-flex">
+                <div class="contact-snippets">
+                    <span><i class="fa-solid fa-phone"></i> <a href="tel:+254741276241">+254 741 276241</a> / <a href="tel:+254720121155">+254 720 121155</a></span>
+                    <span><i class="fa-solid fa-envelope"></i> <a href="mailto:aquasolart@gmail.com">aquasolart@gmail.com</a></span>
+                    <span><i class="fa-solid fa-location-dot"></i> Makutano Junction, Meru-Maua Road</span>
+                </div>
+                <div class="social-snippets">
+                    <span class="nca-badge">NCA Certified (Reg. 87342)</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADER & NAVIGATION -->
+        <header class="site-header">
+            <div class="container header-flex">
+                <div class="logo-container">
+                    <a href="index.html" aria-label="Aqua Solar Technologies home"><img src="assets/logo.jpeg" alt="Aqua Solar Technologies Ltd logo" class="site-logo"></a>
+                </div>
+                <nav class="main-nav">
+                    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                    <button class="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i><span>Dark mode</span>
+                    </button>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#calculator" class="btn-quote">Get a Quote</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- HERO SECTION (DAY/NIGHT SLIDER WITH ORBITING SELECTOR) -->
+        <section id="home" class="hero-section">
+            <div class="hero-bg day-bg active" id="heroDay"></div>
+            <div class="hero-bg night-bg" id="heroNight"></div>
+            
+            <div class="container hero-content">
+                <span class="hero-eyebrow">AQUA SOLAR TECHNOLOGIES LIMITED</span>
+                <h1>Water, energy and construction — delivered with confidence.</h1>
+                <p>From borehole surveys to solar systems and water infrastructure, we deliver practical solutions for communities, institutions and businesses across Kenya.</p>
+                <div class="hero-actions">
+                    <a class="hero-cta" href="#calculator">Request a free quote <i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="hero-secondary-cta" href="#services">Explore our services</a>
+                </div>
+                <div class="hero-trust" aria-label="Company highlights">
+                    <span><strong>17+</strong> projects</span>
+                    <span><strong>8</strong> counties</span>
+                    <span><strong>Ksh 50M+</strong> value delivered</span>
+                </div>
+            </div>
+
+            <!-- Orbiting Day/Night Toggle Widget -->
+            <div class="time-toggle-widget" id="timeToggleWidget">
+                <div class="orbit-circle">
+                    <div class="orbit-icon sun-icon" title="Morning"><i class="fa-solid fa-sun"></i></div>
+                    <div class="orbit-icon moon-icon" title="Night"><i class="fa-solid fa-moon"></i></div>
+                    <div class="revolving-dot" id="revolvingDot"></div>
+                </div>
+                <div class="time-labels">
+                        <button class="time-btn active" id="btnMorning">Day view <br><small>Solar generation</small></button>
+                        <button class="time-btn" id="btnNight">Night view <br><small>Energy planning</small></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CORE SERVICES -->
+        <section id="services" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Core Services</h2>
+                    <p>Comprehensive solutions across water, energy and construction</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <h3>Solar Solutions</h3>
+                        <p>Residential, commercial and industrial PV systems, solar water pumps, street lighting and off-grid battery storage.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-water"></i>
+                        <h3>Borehole Drilling & Water</h3>
+                        <p>Hydrogeological surveys, drilling, casing, test pumping and submersible pump installation.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-industry"></i>
+                        <h3>Steel Tanks & Towers</h3>
+                        <p>Fabrication and erection of elevated steel tanks from 5 m³ to 100 m³ and above, plus water towers.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Electrical Engineering</h3>
+                        <p>Complete wiring, industrial control panels, automation and backup generator installations.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-compass"></i>
+                        <h3>Hydrological Survey</h3>
+                        <p>Groundwater studies, aquifer mapping, environmental impact assessments and groundwater monitoring.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-road"></i>
+                        <h3>Building & Roads</h3>
+                        <p>Civil engineering, road works, water and sewer systems design, drainage and flood-control infrastructure.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-person-swimming"></i>
+                        <h3>Swimming Pools</h3>
+                        <p>Design, construction and maintenance of residential and commercial swimming pools.</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fa-solid fa-gears"></i>
+                        <h3>Generator Services</h3>
+                        <p>Supply, installation and maintenance of standby and industrial generators.</p>
+                    </div>
+                </div>
+                <div class="service-detail-grid">
+                    <article class="service-detail-card"><h3>Solar & renewable energy</h3><p>PV systems for residential, commercial and industrial sites; solar water pumping; off-grid systems with battery storage; solar water heating; street lighting; and battery storage systems.</p></article>
+                    <article class="service-detail-card"><h3>Water storage solutions</h3><p>Elevated galvanized steel tanks on structural towers from 5 m³ to 100 m³+, plastic water tank towers, reinforced concrete tanks and GRP panel tanks.</p></article>
+                    <article class="service-detail-card"><h3>Electrical engineering & civil works</h3><p>Electrical installation, CCTV, solar power generation, UPS, AVR, MCCBs, telecom and networking, mechanical systems, control systems, road and highway design, building construction, water and sewer systems, surveying and planning.</p></article>
+                    <article class="service-detail-card"><h3>Borehole & water services</h3><p>Site selection, hydrogeological surveys, drilling, casing, gravel packing, test pumping, water quality testing, pump installation and repair, borehole rehabilitation, groundwater studies and EIA services.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE SOLAR CALCULATOR & QUOTE REQUEST -->
+        <section id="calculator" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Interactive Solar Savings Calculator</h2>
+                    <p>Estimate your system size and instant savings</p>
+                </div>
+                <div class="calc-wrapper">
+                    <div class="calc-inputs">
+                        <div class="form-group">
+                            <label>Average Monthly Electricity Bill (Ksh):</label>
+                            <input type="number" id="monthlyBillInput" value="15000" min="1000" step="500" inputmode="numeric">
+                        </div>
+                        <div class="form-group">
+                            <label>Property Type:</label>
+                            <select id="propertyTypeSelect">
+                                <option value="residential">Residential Home</option>
+                                <option value="commercial">Commercial Building / Business</option>
+                                <option value="agricultural">Agricultural / Borehole Pumping</option>
+                                <option value="institutional">School / Institution</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-primary" id="calculateBtn">Calculate Savings</button>
+                    </div>
+                    <div class="calc-results" id="calcResultsBox">
+                        <h3>Estimated Solar Potential</h3>
+                        <div class="result-item"><span>Recommended System Size:</span> <strong id="resSystemSize">5 kW</strong></div>
+                        <div class="result-item"><span>Estimated Monthly Savings:</span> <strong id="resSavings">Ksh 12,500</strong></div>
+                        <div class="result-item"><span>Estimated Payback Period:</span> <strong id="resPayback">3.2 Years</strong></div>
+                        <div class="result-item"><span>7-Year Net Savings:</span> <strong id="res7Year">Ksh 1,050,000</strong></div>
+                    </div>
+                </div>
+
+                <!-- Instant Quote Form -->
+                <div class="quote-form-box">
+                    <h3 id="quoteFormTitle">Request your free written quote within 24 hours</h3>
+                    <form id="quoteForm">
+                        <div class="form-row">
+                            <input type="text" id="qName" placeholder="Full Name" autocomplete="name" required>
+                            <input type="email" id="qEmail" placeholder="Email Address" autocomplete="email" required>
+                        </div>
+                        <div class="form-row">
+                            <input type="tel" id="qPhone" placeholder="Phone Number (+254...)" autocomplete="tel" required>
+                            <select id="qService">
+                                <option value="Solar PV System">Solar PV System</option>
+                                <option value="Borehole Drilling">Borehole Drilling</option>
+                                <option value="Steel Water Tower & Tanks">Steel Water Tower & Tanks</option>
+                                <option value="Electrical Engineering">Electrical Engineering</option>
+                                <option value="Hydrological Survey">Hydrological Survey</option>
+                                <option value="Building & Roads">Building & Roads</option>
+                                <option value="Swimming Pools">Swimming Pools</option>
+                                <option value="Generator Services">Generator Services</option>
+                            </select>
+                        </div>
+                        <textarea id="qMessage" placeholder="Tell us about your project requirements..." rows="4"></textarea>
+                        <button type="submit" class="btn-primary">Submit Instant Quote Request</button>
+                    </form>
+                    <div id="formResponseMsg" class="form-response" role="status" aria-live="polite"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CUSTOMER REVIEWS -->
+        <section id="reviews" class="section reviews-section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Customers Say</h2>
+                    <p>Share your experience with Aqua Solar Technologies.</p>
+                </div>
+                <div class="reviews-layout">
+                    <div id="reviewsList" class="reviews-list" aria-live="polite"><p class="reviews-empty">Loading reviews…</p></div>
+                    <div class="review-form-box">
+                        <h3>Leave a review</h3>
+                        <form id="reviewForm">
+                            <input id="reviewWebsite" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
+                            <input id="reviewName" type="text" placeholder="Your name" maxlength="80" required>
+                            <select id="reviewRating" required aria-label="Rating">
+                                <option value="5">★★★★★ — Excellent</option>
+                                <option value="4">★★★★☆ — Very good</option>
+                                <option value="3">★★★☆☆ — Good</option>
+                                <option value="2">★★☆☆☆ — Fair</option>
+                                <option value="1">★☆☆☆☆ — Poor</option>
+                            </select>
+                            <textarea id="reviewComment" placeholder="Tell us about your experience…" maxlength="1000" rows="5" required></textarea>
+                            <button type="submit" class="btn-primary">Submit review</button>
+                        </form>
+                        <p id="reviewResponse" class="form-response" role="status" aria-live="polite"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer" id="contact">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <h3>Aqua Solar Technologies Ltd</h3>
+                    <p>Green Energy for a Clean Future</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Makutano Junction, Meru-Maua Road, Meru</p>
+                    <p><i class="fa-solid fa-envelopes-bulk"></i> P.O. Box 62700 – 00200, Westlands, Nairobi</p>
+                    <p><i class="fa-solid fa-envelope"></i> aquasolart@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +254 741 276241 / +254 720 121155</p>
+                    <p><i class="fa-solid fa-globe"></i> www.aquasolarltd.co.ke</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="#calculator">Get a Quote</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Certifications & Compliance</h3>
+                    <ul>
+                        <li>Certificate of Incorporation: PVT-27UMVNB</li>
+                        <li>Incorporated: 7 November 2019</li>
+                        <li>NCA Building Works: 87342/B/0924 — Category NCA6</li>
+                        <li>NCA Water Works: 87342/W/0924 — Category NCA6</li>
+                        <li>NCA Electrical Engineering: 87342/E/0924 — Category NCA6</li>
+                        <li>Profile validity date shown: July 2025</li>
+                        <li>KRA PIN: P051854244J — VAT and Income Tax Active</li>
+                        <li>Business Permit 2024: County Government of Meru, No. 6917 — valid 1 Jan–31 Dec 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- BIGGER LOGO AFTER FOOTER AS REQUESTED -->
+            <div class="footer-bottom-logo-container">
+                <img src="assets/logo.jpeg" alt="Aqua Solar Technologies Ltd logo" class="footer-logo">
+                <p>&copy; 2026 Aqua Solar Technologies Ltd. All Rights Reserved.</p>
+                <P>Designed by macsoftwares.</P>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="app.js?v=9"></script>
+</body>
+</html>
